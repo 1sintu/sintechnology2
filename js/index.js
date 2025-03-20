@@ -137,7 +137,7 @@ function createGalleryItems() {
         item.className = 'gallery-item';
         item.innerHTML = `<img src="${src}" alt="Gallery Image ${index + 1}">`;
         const angle = (360 / totalItems) * index;
-        item.style.transform = `rotateY(${angle}deg) translateZ(300px)`; // Radius remains 400px
+        item.style.transform = `rotateY(${angle}deg) translateZ(200px)`; // Radius remains 400px
         gallery.appendChild(item);
     });
 }
