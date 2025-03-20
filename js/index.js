@@ -137,7 +137,7 @@ function createGalleryItems() {
         item.className = 'gallery-item';
         item.innerHTML = `<img src="${src}" alt="Gallery Image ${index + 1}">`;
         const angle = (360 / totalItems) * index;
-        item.style.transform = `rotateY(${angle}deg) translateZ(100px)`; // Radius remains 400px
+        item.style.transform = `rotateY(${angle}deg) translateZ(150px)`; // Radius remains 400px
         gallery.appendChild(item);
     });
 }
@@ -171,3 +171,5 @@ function toggleSidebar() {
 function closeSidebar() {
     document.getElementById('sidebar').classList.add('-translate-x-full');
 }
+
+
